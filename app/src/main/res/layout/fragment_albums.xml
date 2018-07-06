@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:src="@drawable/ic_album"
+        android:id="@+id/album_cover"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/text_margin"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/album_cover">
+
+        <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Album name"/>
+
+        <TextView
+            android:id="@+id/album_songCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="n songs"/>
+    </LinearLayout>
+</RelativeLayout>
